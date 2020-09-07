@@ -29,6 +29,7 @@ before_install:
   - git clone https://github.com/trojan-gfw/trojan-panel.git
   - cd trojan-panel
   - git checkout ${CODE_TAG}
+  - cd ..
 
 script:
   - pwd
