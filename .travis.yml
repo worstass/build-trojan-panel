@@ -31,4 +31,6 @@ before_install:
   - git checkout ${CODE_TAG}
 
 script:
+  - pwd
+  - ls
   - docker buildx build --platform linux/amd64 -t ${IMAGE_TAG} -f Dockerfile .
